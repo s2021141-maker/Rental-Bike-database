@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Rental Concept</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <section class="layout-section">
+        <h2>The Homepage Layout:</h2>
+
+        <div class="homepage-mockup">
+          <div class="topbar">
+            <div class="brand">bike.lk</div>
+            <div class="top-icons">
+              <button class="icon-button" aria-label="Profile">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4.6 0-8 2.2-8 5v1h16v-1c0-2.8-3.4-5-8-5Z"/></svg>
+              </button>
+              <button class="icon-button" aria-label="Exit">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.4 8.4 14.9 12l-4.5 3.6L9 14.6l2.1-1.6L9 11.4Zm-7.4 3.6a1 1 0 0 1 1-1h7.1v2H4a1 1 0 0 1-1-1Zm6.8 7.4H5.5A2.5 2.5 0 0 1 3 16.4V7.6A2.5 2.5 0 0 1 5.5 5h4.3v2H5.5a.5.5 0 0 0-.5.5v8.8a.5.5 0 0 0 .5.5h4.3Zm12.2-8.4a1 1 0 0 0-.2-.6l-4-4a1 1 0 0 0-1.7 1.1L19.2 11H9v2h10.2l-2.5 2.1a1 1 0 1 0 1.3 1.5l4-3.4a1 1 0 0 0 .2-.7Z"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="map-panel">
+            <aside class="left-panel">
+              <div class="panel-box filter-box">
+                <h3>Filter Bikes</h3>
+                <div class="filter-options">
+                  <button class="filter-pill active" data-filter="all">All</button>
+                  <button class="filter-pill" data-filter="adult">Adult</button>
+                  <button class="filter-pill" data-filter="child">Child</button>
+                </div>
+              </div>
+
+              <div class="panel-box bike-info">
+                <h3>Bike Information</h3>
+                <div class="info-list">
+                  <p>Bike ID: <strong>B021</strong></p>
+                  <p>Type: <strong>child</strong></p>
+                  <p>Status: <strong>Available</strong></p>
+                  <p>History: <strong>1 trip</strong></p>
+                  <p>Condition: <strong>Excellent</strong></p>
+                  <p>Unlock QR Code</p>
+                </div>
+                <div class="qr-box" aria-label="QR code placeholder">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <button class="start-ride">Start Ride</button>
+              </div>
+            </aside>
+
+            <div class="map-grid" aria-label="Bike map">
+              <div class="grid-lines"></div>
+
+              <div class="pin pin-blue" style="left: 55%; top: 35%;"></div>
+              <div class="pin pin-orange" style="left: 72%; top: 22%;"></div>
+              <div class="pin pin-blue" style="left: 36%; top: 52%;"></div>
+              <div class="pin pin-orange" style="left: 61%; top: 65%;"></div>
+              <div class="pin pin-blue" style="left: 48%; top: 73%;"></div>
+              <div class="pin pin-orange" style="left: 28%; top: 74%;"></div>
+              <div class="pin pin-orange" style="left: 81%; top: 77%;"></div>
+              <div class="pin pin-blue" style="left: 21%; top: 22%;"></div>
+              <div class="pin pin-blue" style="left: 44%; top: 22%;"></div>
+              <div class="pin pin-orange" style="left: 67%; top: 39%;"></div>
+
+              <div class="legend-box">
+                <h4>LEGEND:</h4>
+                <div class="legend-row">
+                  <span class="legend-icon blue"></span>
+                  <span>= Adult Sized Bikes</span>
+                </div>
+                <div class="legend-row">
+                  <span class="legend-icon orange"></span>
+                  <span>= Child Sized Bikes</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="zoom-controls" aria-label="Map zoom controls">
+              <button aria-label="Zoom in">+</button>
+              <button aria-label="Zoom out">−</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="description-block">
+          <p>
+            The homepage layout is intended to look something like this, a very minimalistic style interface that doesn't overwhelm users with many buttons on the screens but at the same time also give them the information needed, as well as enough interactive features being easily accessible with icons such as the profile on the top right and the exit button on the top right being represented as symbols to simplify their overall design while also being very easily understandable to new users.
+          </p>
+        </div>
+
+        <div class="soft-note">
+          <div class="menu-circle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p>
+            This is not the final look, something I believe should be implemented is a more colorful user interface with blue, white, etc to make the website look less bland and more user-friendly.
+          </p>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="flow-section">
+        <h2>Website 'Hello Ride alternative bike rental website</h2>
+
+        <div class="flow-diagram" aria-label="Website flow diagram">
+          <div class="node login">Login Page</div>
+          <div class="node auth">Welcome /<br />Authentication</div>
+          <div class="node home">Home / Map Main Page</div>
+
+          <div class="diamond gps">User inputs<br />GPS<br />Destination</div>
+          <div class="diamond filter">Filter Bike<br />Category</div>
+          <div class="diamond profile">User Clicks<br />Profile</div>
+          <div class="diamond logout">Click Log Out</div>
+
+          <div class="box predict">Predict Trip<br />Cost (GPS)</div>
+          <div class="box adult">View Adult<br />Size Bikes</div>
+          <div class="box child">View Child<br />Size Bikes</div>
+          <div class="box profilepage">User Profile<br />Page</div>
+          <div class="box history">View Borrow<br />History</div>
+
+          <div class="exit-box">Exit / Back to<br />Login Page</div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
